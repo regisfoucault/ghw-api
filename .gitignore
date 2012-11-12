@@ -1,0 +1,15 @@
+bin/
+data/
+db/
+dist/
+logs/
+test-result/
+lib/
+tmp/
+modules/
+logs
+project/project
+project/target
+target
+tmp
+.history

@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /repos/search/:keyword      controllers.Application.searchRepo(keyword: String)
+
+GET     /repos/:owner/:repo/contributors      controllers.Application.contributors(owner: String, repo: String)
+
+GET     /repos/:owner/:repo/commits      controllers.Application.commits(owner: String, repo: String)
