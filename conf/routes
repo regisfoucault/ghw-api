@@ -3,6 +3,7 @@
 # ~~~~
 
 # Home page
+GET     /       controllers.Application.index()
 GET     /repos/search/:keyword      controllers.Application.searchRepo(keyword: String)
 
 GET     /repos/:owner/:repo/contributors      controllers.Application.contributors(owner: String, repo: String)

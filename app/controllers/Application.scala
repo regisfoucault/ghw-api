@@ -7,6 +7,10 @@ import play.api.libs.ws.WS
 
 object Application extends Controller {
 
+  def index() = Action{
+    Ok("Hello World !")
+  }
+
   def searchRepo(keyword: String) = Action {
     val feedUrl = "https://api.github.com/legacy/repos/search/" + keyword
     Async {
