@@ -8,7 +8,7 @@ import play.api.libs.ws.WS
 object Application extends Controller {
 
   def index() = Action{
-    Ok("Hello World !")
+    Ok(views.html.index())
   }
 
   def searchRepo(keyword: String) = Action {

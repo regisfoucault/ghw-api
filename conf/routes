@@ -9,3 +9,6 @@ GET     /repos/search/:keyword      controllers.Application.searchRepo(keyword: 
 GET     /repos/:owner/:repo/contributors      controllers.Application.contributors(owner: String, repo: String)
 
 GET     /repos/:owner/:repo/commits      controllers.Application.commits(owner: String, repo: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /public/*file               controllers.Assets.at(path="/public", file)
