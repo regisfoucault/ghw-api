@@ -1,5 +1,7 @@
-ghw-api
+Ghw-api
 =======
+
+Production url : [api.ghw.regisfoucault.com](api.ghw.regisfoucault.com)
 
 Get commiters: /repos/search/:keyword/
 
